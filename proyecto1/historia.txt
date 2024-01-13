@@ -14,5 +14,9 @@ git show : muestra las modificaciones que ha sufrido un archivos
 
 git rm --cached : quita de la lista elementos a los que ya les hayamos hecho el add
 
+git commit -m "" : para ingresar el commit
+
+nota : si entro en pantalla por no enviar mensaje en el commit utilizo [ esc shift z z]
+
 
 
