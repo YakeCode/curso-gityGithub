@@ -1,6 +1,8 @@
 Esta historia comienza peleando con git.
 
-        DIRECTORIO -- staging (RAM) -- REPOSITORIO (disco duro)
+        DIRECTORIO -- staging (RAM) -- REPOSITORIO [MASTER (disco duro )]
+
+        STAGING : area de preparacion
 
 git init : inicia un repositorio
 
@@ -31,4 +33,10 @@ git diff : me deja comparar los cambios que de han hecho entre dos key commits
             git diff key1 key2
 
             git diff 2463f4b7ff68337b0f3eb2cb44441b33ed1e2a7a 891650c929749da1909e65ff0abce5d1f2a0f2c9
+
+git checkout : 
+
+****    git clone : clona un repositorio
+
+                git clone url del repo
 
