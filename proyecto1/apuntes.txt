@@ -40,3 +40,7 @@ git checkout :
 
                 git clone url del repo
 
+git merge :  unir los cambios que se han hecho entre una rama y otra.
+
+
+
