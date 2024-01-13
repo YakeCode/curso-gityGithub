@@ -1,1 +1,18 @@
 Esta historia comienza peleando con git.
+
+git init : inicia un repositorio
+
+git status :  muestra el estado de los archivos que estan para el commit y los que no
+
+git status -u : muestra los archivos no rastreados
+
+git add : alista los archivos para hacerles commit
+
+git add . : alista todos los archivos para el commit
+
+git show : muestra las modificaciones que ha sufrido un archivos
+
+git rm --cached : quita de la lista elementos a los que ya les hayamos hecho el add
+
+
+
