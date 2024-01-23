@@ -42,5 +42,19 @@ git checkout :
 
 git merge :  unir los cambios que se han hecho entre una rama y otra.
 
+git reset : para volver a auna hash anterior
+
+git reset [hash] -- hard : para volver a un lugar anterior borrando todo y elimina todo lño que existia en el log
+
+git reset [hash] --soft : me deja volverven el tiempo pero me mentiene el git add para alistarlño para el proximo commit
+
+
+///////////// MOVERSE ENTRE RAMAS 
+
+La Rama por defecto es master (o main) -> importante leer la guia de git flow para entender a partir de cuando crear ramas 
+
+
+
+
 
 
