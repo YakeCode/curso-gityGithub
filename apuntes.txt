@@ -42,11 +42,11 @@ git checkout :
 
 git merge :  unir los cambios que se han hecho entre una rama y otra.
 
-git reset : para volver a auna hash anterior
+git reset : para volver a un hash anterior
 
-git reset [hash] -- hard : para volver a un lugar anterior borrando todo y elimina todo lño que existia en el log
+        git reset [hash] -- hard : para volver a un lugar anterior borrando todo y elimina todo lño que existia en el log
 
-git reset [hash] --soft : me deja volverven el tiempo pero me mentiene el git add para alistarlño para el proximo commit
+        git reset [hash] --soft : me deja volverven el tiempo pero me mentiene el git add para alistarlo para el proximo commit
 
 
 ///////////// MOVERSE ENTRE RAMAS 
