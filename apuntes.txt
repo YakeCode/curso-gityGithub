@@ -101,9 +101,10 @@ la rama se crea desde el lugar donde estoy
 
 git branch [nombre de la rama] crea nueva rama
 
-- moverse entre ramas Git checkout
-        
-        git checkout [rama] 
+git checkout [rama] - moverse entre ramas Git checkout
+
+git merge [rama con la cual voy a convinar] : me situo en la rama que voy a dejar como prtinmcipal y hago el merge con la rama que quiero convinar
+
 
 
 
