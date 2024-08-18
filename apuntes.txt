@@ -10,22 +10,31 @@ git status :  muestra el estado de los archivos que estan para el commit y los q
 
 git status -u : muestra los archivos no rastreados
 
-git add : alista los archivos para hacerles commit -> los envia al staging o memeoria ram
+git add [archivo] : alista los archivos para hacerles commit -> los envia al staging o memeoria ram
 
-git add . : alista todos los archivos para el commit
+        git add . : alista todos los archivos para el commit
 
 git show : muestra las modificaciones que ha sufrido un archivos y es muy útil para detectar cuándo se produjeron ciertos cambios
 
 git rm --cached : quita de la lista elementos a los que ya les hayamos hecho el add
 
+         git rm --cached: Elimina archivos del repositorio local y del área de staging, pero los mantiene en el disco duro. Deja de trackear el historial de cambios de estos archivos, por lo que quedan en estado untracked.
+
+        git rm --force: Elimina los archivos de Git y del disco duro. Git guarda todo, por lo que podemos recuperar archivos eliminados si es necesario (empleando comandos avanzados).
+
+
 git commit -m "" : para ingresar el commit
 
 git log : muestra la historia de todos los commits
 
-nota : si entro en pantalla por no enviar mensaje en el commit utilizo [ esc shift z z]
+git log --stat : dice cuantos cambios se hicieron a partir del commit y en que archivo
 
-        para hacer el MENSAJE desde la pantalla de bim 
-            esc i  nos deja agregar el msg del commit -> luego doble enter y por ultimo [ esc shift z z]
+        nota : si entro en pantalla por no enviar mensaje en el commit utilizo [ esc shift z z]
+
+                para hacer el MENSAJE desde la pantalla de bim 
+                 esc i  nos deja agregar el msg del commit -> luego doble enter y por ultimo [ esc shift z z]
+
+        nota : para salir de la pantalla de git log puedo hacerlo usando la letra [ q ]
 
 git diff : me deja comparar los cambios que de han hecho entre dos key commits
         sintaxis : 
@@ -34,27 +43,52 @@ git diff : me deja comparar los cambios que de han hecho entre dos key commits
 
             git diff 2463f4b7ff68337b0f3eb2cb44441b33ed1e2a7a 891650c929749da1909e65ff0abce5d1f2a0f2c9
 
-git checkout : 
+git checkout : git checkout sirve para traer un archivo a como estaba en el hash indicado
 
-****    git clone : clona un repositorio
+        git checkout hash archivo: trae el archivo a esa version y lo dwja en stagin, si damos commit se borrarian todos los cambios hechos despues de ese hash
 
-                git clone url del repo
+        git checkout master (o main, o nombre de la rama) : nos llevara a la ultima version de esta a la que se hubiera llevado commit
+
+git clone : clona un repositorio
+
+        git clone url del repo
 
 git merge :  unir los cambios que se han hecho entre una rama y otra.
 
 git reset : para volver a un hash anterior
 
+        Con git reset volvemos al pasado sin la posibilidad de volver al futuro
+
         git reset [hash] -- hard : para volver a un lugar anterior borrando todo y elimina todo lño que existia en el log
 
         git reset [hash] --soft : me deja volverven el tiempo pero me mentiene el git add para alistarlo para el proximo commit
 
+        git reset [hash] --mixed: Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial.
+
+        git reset [hash] HEAD: El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión.
+
+
+
+
+/////////////////////Trabajo online
+
+git fetch : traer actualizacion del servidor de los cambios y lo trae al repositorio local pero no lo copia en mis archivos
+
+        para que lo copie en mis archivos, debo fusionar el repositorio local con la version actualizacion
+
+        con git merge
+
+git merge : convina los cambios traidos del servidor con fetch y se los pasa al repositoro local
+
+git pull : hace el fetch y el merge al mismo tiempo
 
 ///////////// MOVERSE ENTRE RAMAS 
 
+las ramas son formas en la s que nosotros podemos hacer cambios sin afectar la rama principal
+
 La Rama por defecto es master (o main) -> importante leer la guia de git flow para entender a partir de cuando crear ramas 
 
-
-
+git commit -am "" : lo que hace es hacer el add de todo 
 
 
 

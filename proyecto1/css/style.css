@@ -6,6 +6,18 @@ body{
     padding-top: 10%;
 }
 
-h1{
+
+
+#Container{
+    width: 70%;
+    padding: 1rem;
+    border:1px solid whitesmoke;
+    border-radius:1rem ;
+    margin:0 auto;
+    text-align: left;
+    
+}
+#Container h1{
+    font-size: 20px;
     color: rgb(0, 160, 160);
 }
