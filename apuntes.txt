@@ -90,5 +90,21 @@ La Rama por defecto es master (o main) -> importante leer la guia de git flow pa
 
 git commit -am "" : lo que hace es hacer el add de todo 
 
+        si no ponemos el mensaje 
+                en la pantalla de nano contro + o
+                
+                control x para salir
+
+        ---CREAR RAMA---
+
+la rama se crea desde el lugar donde estoy
+
+git branch [nombre de la rama] crea nueva rama
+
+- moverse entre ramas Git checkout
+        
+        git checkout [rama] 
+
+
 
 
