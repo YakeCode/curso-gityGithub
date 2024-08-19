@@ -1,0 +1,27 @@
+
+git config -l : revisar como esta xonfigurado git en local
+    [
+        user.email=y.gaviriaescobar@gmail.com
+        user.name=YakeCode
+    ]
+
+git config --global user.email "correo@correo" : cambiar correo    
+
+
+
+ls -l ~/.ssh/ : 
+    Deberías ver archivos como id_rsa y id_rsa.pub si ya tienes una clave SSH generada. El archivo id_rsa es tu clave privada y id_rsa.pub es la clave pública.
+
+cat ~/.ssh/id_rsa.pub : para ver el contenido de la llave publica
+
+------- crear llave ssh
+
+ssh-keygen -t rsa -b 4096 -C "[correo electronico del repositorio]"
+
+------ validar si hay conexion de ssh 
+
+eval $(ssh-agent -s)
+
+------agregar la llave
+
+ssh-add ~/.ssh/id_rsa
