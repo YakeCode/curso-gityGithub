@@ -36,6 +36,8 @@ git log --stat : dice cuantos cambios se hicieron a partir del commit y en que a
 
         nota : para salir de la pantalla de git log puedo hacerlo usando la letra [ q ]
 
+git diff : me deja ver los ultimos cambios 
+
 git diff : me deja comparar los cambios que de han hecho entre dos key commits
         sintaxis : 
 
@@ -111,3 +113,13 @@ al hacer un merge entre 2 ramas que tienen modificaciones diferentes en las mism
 
         commit para guardar los cmabios despues de haber solucionado el conflicto y luego el 
         merge para unir ambos cambios
+
+-------------- anadir a un repositorio remoto ya existente en local------
+
+git remote add origin [url]
+
+git pull : trae los cambios del repositorio que no esten integrados en el local
+
+git push : manda los cambios al repositorio online
+
+git pull origin [la rama a la cual traer los cambios] 
