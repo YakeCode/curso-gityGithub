@@ -6,12 +6,8 @@ body{
     padding-top: 10%;
 }
 
-
-
-
 #Container{
     width: 70%;
-    padding: 1rem;
     border:1px solid whitesmoke;
     border-radius:1rem ;
     margin:0 auto;
@@ -20,20 +16,32 @@ body{
 }
 
 #cabecera{
+    margin: 0;
     background-color: rgb(161, 161, 161);
-    text-align: center;
-    color: rgb(157, 23, 235);
+    text-align: left;
+    color: rgb(143, 255, 115);
     font-weight: bolder;
     font-size: 40px;
-    border-radius: 0.5rem;
-    display: block;
-    width: max-content;
-    margin: 0 auto;
-    padding: 0 3rem;
+    border-radius: 1rem 1rem 0 0;
+    padding-left: 1rem;
 }
 
 #Container h1{
-    
     font-size: 20px;
-    color: rgb(0, 160, 160);
+    color: rgb(89, 223, 223);
+}
+
+#Container p {
+    margin: 0;
+}
+
+#Container p span {
+    font-size: 20px;
+    font-weight: 200;
+    color: aqua;
+}
+
+
+#post{
+    padding: 1rem;
 }
