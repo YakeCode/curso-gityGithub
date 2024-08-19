@@ -18,8 +18,12 @@ body{
 #cabecera{
     margin: 0;
     background-color: rgb(161, 161, 161);
+<<<<<<< HEAD
     text-align: left;
     color: rgb(143, 255, 115);
+=======
+
+>>>>>>> main
     font-weight: bolder;
     font-size: 40px;
     border-radius: 1rem 1rem 0 0;
