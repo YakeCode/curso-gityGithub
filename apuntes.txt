@@ -36,6 +36,12 @@ git log --stat : dice cuantos cambios se hicieron a partir del commit y en que a
 
         nota : para salir de la pantalla de git log puedo hacerlo usando la letra [ q ]
 
+git log --all : muestra absolutamente todo
+
+git log --all --graph : muestra como han funcionado las ramas 
+
+git log --all --graph --decorate --oneline : muestra un grafico mucho mas comprimido
+
 git diff : me deja ver los ultimos cambios 
 
 git diff : me deja comparar los cambios que de han hecho entre dos key commits
@@ -123,3 +129,44 @@ git pull : trae los cambios del repositorio que no esten integrados en el local
 git push : manda los cambios al repositorio online
 
 git pull origin [la rama a la cual traer los cambios] 
+
+************* CREAR ALIAS O COMANDOS **************
+SYNTAXIS : alias [nombre qiue le vamos a poner]="[el comando]"
+        alias arbolito="git log --all --graph --decorate --oneline"
+        luego solo ponemos el nombre del comando 
+        alias : solo ponemos la palagra alias para ver los alias qe hemos creado
+
+------------ crear un tag-----
+
+git tag -a [nombre que le voy a poner a esa version] -m "mensaje como si fuera un commit" hash
+
+                git tag -a v01 -m "version antes decrear la rama cabecera" d18c571
+
+        git tag : muestras los tag que he creado
+
+        git show-ref --tags : muestra a que comit esta conectado un tag
+
+        git push origin --tags : para enviar los tags a github
+
+        git tag -d [nombre del tag] : para eliminar un tag en el repositorio local
+
+                git tag -d 2b7bd85
+
+        git push origin --delete [nombre del tag] : para eliminar un tag de gitHub
+
+                git push origin --delete 2b7bd85
+
+--------------enviar diferentes ramas al servidor----------------
+
+git show-branch --all : muestra la historia de las ramas
+
+gitk : muestra un aplicativo de como han funcionado las ramas *****************
+
+git push origin [nombre de la rama]
+
+
+
+
+        
+
+        
