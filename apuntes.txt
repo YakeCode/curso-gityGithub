@@ -164,6 +164,11 @@ gitk : muestra un aplicativo de como han funcionado las ramas *****************
 
 git push origin [nombre de la rama]
 
+        -----------------agregar colaboradores en GitHub-------------
+
+        ajustes del repo ->colaborators -> el correo del colaborador o username
+                
+
 
 
 
