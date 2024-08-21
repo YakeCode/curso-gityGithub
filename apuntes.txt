@@ -168,6 +168,21 @@ git push origin [nombre de la rama]
 
         ajustes del repo ->colaborators -> el correo del colaborador o username
                 
+-----------------PULL-requests----------------------
+
+pull requests es la forma en como de hace una revision del codigo para verificar los cambios y si se hacepta este hace merge automatico hacia donde se haya hecho el mismo. Se hace para hacer un control de calidad de estos mismos
+
+       [PR no es una caracteristica directa de git, es de GITHUB] 
+
+        main o master -> servidor de produccion
+
+        feature -> rama de desarrollo, o de caracteristica
+        
+        staging develop -> servidor de pruevas
+
+                NOTA: staging y master siempre deberian estar actualizados
+
+        el feature hace PR (pull requests) con el staging, si se aprueba este hacer merge con staging automaticamente, y si funciona bien, se hacer PR de feature con main
 
 
 
