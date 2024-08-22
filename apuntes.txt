@@ -183,6 +183,40 @@ pull requests es la forma en como de hace una revision del codigo para verificar
                 NOTA: staging y master siempre deberian estar actualizados
 
         el feature hace PR (pull requests) con el staging, si se aprueba este hacer merge con staging automaticamente, y si funciona bien, se hacer PR de feature con main
+---------------------------------------------------------------------------------------------------------------
+
+---------------------- Fork-Proyectos Open Source -----------------------
+
+para hacer un fork el proyecto el en github debe ser oublico, le doy en el botopn de fork que aparece en el proyecto y esto automaticamente lo agraga en mi repositorio de github
+
+        * apartir de ahi en el area local
+
+        -git clone [url] : clono el repo
+
+                        NOTA: poner tildes en html se pone &[letra]acute;
+
+                -hacemos los cambios necesarios o en los cuales deseamos ayudar
+                -cuando hacemos push conb los cambios que hicimos estos vanm pero a nuestro repositorio
+
+        * En GitHub 
+                -new pull request
+                -seleccionamos desde que rama y a que rama se desea hacer PR
+                -create pull request
+
+        ------------------- Si el fork mio esta desactualizado ----------------------
+
+        se debe crear una rama con un clone del repositorio orriginal, en teoria tengo es una copia que es un foork pero esta en mi repositorrio
+
+        debo ir al original y hacerle un clone y luego hacer un merge del repositorio mio con el original actual para actualizar el mio
+
+        de esta forma
+
+                -git remote add [upstream o nombre que queramos ponerle ]el linck del original
+                -git pull upstream origin main :nos hace una actualizacion del repositorio original al nivel mas actualizacion
+                -git push origin main : queda nuestro repositorio online actualizzado 
+                -verificar y confirmar la ruta a la hora de compartir el linck
+
+
 
 
 

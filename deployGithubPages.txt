@@ -1,0 +1,10 @@
+vamos en setings en nuestro proyecto
+
+    -setings
+    -pages
+    NOTA : -en source no seleccionar : choose a theme
+
+    -en source seleccionar : la rama en la cual queremos hacer deploy
+    -luego elegir la carpeta o ruta desde la cual haremos el deploy
+    -save
+ 

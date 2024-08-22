@@ -1,0 +1,8 @@
+lista de los archivos que se van a ignorar
+
+    SYNTAXIS : *.[extencion] - > si quiero ignorar todos los archivos con esa extencion
+
+    /directorio/ : para ignoprar una carpeta por completo
+
+    archivo.extension : archivo especifico a ignorar
+    !archivo.extencion :archivo que se excluye de la lista gitignore
