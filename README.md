@@ -1,5 +1,3 @@
-
-
 # Curso de Git y GitHub 
 
 Nota: A GitHub no se deben subir archivos como imágenes, como buena práctica se deberían subir a una página, como por ejemplo (https://imgur.com/) y de ahí referenciarlas hacia nuestros proyectos.

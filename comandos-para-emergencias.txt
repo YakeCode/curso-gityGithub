@@ -1,0 +1,7 @@
+----------- git reflog ----------
+
+git reflog : se ven absolutamente todos los cambios inclusi no muestra git log
+
+--------------- Git Reset -------------
+
+git reset --HARD [hash]:  restablece absolutamente todo a como estaba antes en ese ultimo commit, es recomendable revisar primero los commits con git reflog
