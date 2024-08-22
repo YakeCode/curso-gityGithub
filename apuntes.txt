@@ -113,6 +113,8 @@ git checkout [rama] - moverse entre ramas Git checkout
 
 git merge [rama con la cual voy a convinar] : me situo en la rama que voy a dejar como prtinmcipal y hago el merge con la rama que quiero convinar
 
+git branch -D [rama] : se utilliza para borar una rama especificada
+
         ---------------- solucionando conflictos em un merge-----------
 
 al hacer un merge entre 2 ramas que tienen modificaciones diferentes en las mismas lineas de codigo git saca un error donde dice en que lineas y ya nosotros o quien este acargo escoge conn que cambio quedarse de forma manual y hay que hacer de nuevi
@@ -215,12 +217,42 @@ para hacer un fork el proyecto el en github debe ser oublico, le doy en el botop
                 -git pull upstream origin main :nos hace una actualizacion del repositorio original al nivel mas actualizacion
                 -git push origin main : queda nuestro repositorio online actualizzado 
                 -verificar y confirmar la ruta a la hora de compartir el linck
+-------------- Nultiples entornos de trabajo --------------------
+
+git rebase : se utiliza para unir 2 ramas pero al utilizar este codigo se re escribe la istoria de losncomits haciendo como si la hisyopria no  fuera entre 2 ramas si no que fuera una sola
+
+        desde la rama que queremos unir hacemos git rebase hacia la que se va a unir
+
+        estoy en la rama bugFix
+                -git rebase main :esto me uniria las 2 lineas como si fueran una sola historia en bugfix
+        luego me voy hacia la rama main
+                -git rebase bugFix 
+
+        luego al revisar la rama master a traves de los logs la rama bug fix si va a exixtir, pero no a a aparecer los cambios que se hicieron desde esta, osea no tendriamos un historial verdadero porque todo quedaria como si se hubiera hecho en master
+        
+        SOLO SE UTILIZA EN LOCAL NUNCA EN REMOTO *mala practica*
+
+                rebase primero a la rama que cambia y luego rebase a la rama final y es como si no pasara nada
 
 
+git stash : me guarda los cambios que hice en un lugar temporal y me lleva a como era el archivo antes del cambio
 
-
-
+git stash save "[mensaje]" : me guarda los cambios que hice en un lugar temporal pero tendre un mensaje que me identifica el stash
 
         
+git stash pop : para traer de vuelta los cambios que hicimos y eliminar el stash
 
-        
+git stash branch [nombre de la rama] :  me crea una nueva rama con los cambios que se hicieron
+
+        si queremos mantener los cambios en estas ramas
+                git add + git commit
+
+git stash list : me muestra la lista de stash que tengo en el momento
+
+git stash drop : se utiliza para cuando no quiero guatdar el stash
+
+git stash pop stash@{<num_stash>} : Para retomar los cambios de una posición específica del Stash
+
+git stash branch nombre_de_rama stash@{<num_stash>} : para crear una rama con los cambios especificos de un stash
+
+---------------------------------------------------------------------
