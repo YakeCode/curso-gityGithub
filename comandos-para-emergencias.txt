@@ -5,3 +5,27 @@ git reflog : se ven absolutamente todos los cambios inclusi no muestra git log
 --------------- Git Reset -------------
 
 git reset --HARD [hash]:  restablece absolutamente todo a como estaba antes en ese ultimo commit, es recomendable revisar primero los commits con git reflog
+
+-----------------git amend -------------
+
+se utiliza para añadir un elemento o cambio a un copmmit ya existente
+
+    -se hace el cambio
+    -git add
+    -git commit --amend
+
+-------------------- grep ----------------
+
+se utiliza para filtrar a traves de git
+
+git grep [palabra] : saca todo lo que coincide con esa palabra con su ruta
+
+git grep -n [palabra] : pasa lo que coincide con la palabra, su ruta y su linea especifica donde se encuentra
+
+git grep -c [palabra] : dice en que archivos se utiliza la palabra y cuantas veces se utiliza
+
+git grep -c "etiqueta de codigo" : muestra las veces que se a utilizado esa etiqueta e un codigo
+
+------ filtar una palabra en los commits ----
+
+git log -S "[palabra]" : aparece el historial en los commits donde se ha utilizado esa palabra o tenga que ver en algo

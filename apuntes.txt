@@ -219,8 +219,15 @@ para hacer un fork el proyecto el en github debe ser oublico, le doy en el botop
                 -verificar y confirmar la ruta a la hora de compartir el linck
 
 
+--------------------- bonus ------------------
 
+git blame [archivo] : Este comando mostrará, línea por línea, la información de quién fue el último que modificó cada una de ellas, junto con la fecha de la modificación y el hash del commit.
 
+git blame [archivo] -L[desde que linea],[hasta que linea] -c : se utiliza para especificar de que linea a que linea alguien hizo los cambios en un archivo y quienes lo hicieron
+
+git branch -r : muestra las ramas remotas
+
+git branch -a : muestra todas la ramas, las locales y las remotas
 
 
         
